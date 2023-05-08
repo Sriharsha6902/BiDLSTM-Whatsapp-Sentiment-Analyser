@@ -1,14 +1,7 @@
 # Importing modules
-import nltk
 import streamlit as st
-import re
 import preprocessor,helper,senti
-import pandas as pd
-import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
-from keras_preprocessing.text import Tokenizer
-from keras_preprocessing.sequence import pad_sequences
 
 # App headere
 st.sidebar.header("Whatsapp Chat Analyzer")
@@ -333,6 +326,3 @@ if uploaded_file is not None:
             except:
                 # Disply error image
                 st.image('error.webp')
-
-
-

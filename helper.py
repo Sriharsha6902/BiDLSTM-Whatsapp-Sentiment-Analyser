@@ -1,5 +1,4 @@
 # Importing modules
-import streamlit as st
 from urlextract import URLExtract
 from wordcloud import WordCloud
 import pandas as pd
