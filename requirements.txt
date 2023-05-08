@@ -1,12 +1,9 @@
 streamlit
 matplotlib
-seaborn
-nltk
+numpy
+pandas
 collection
 wordcloud
 urlextract
 emoji
-gensim
-tensorflow
-spacy
 Keras-Preprocessing
