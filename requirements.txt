@@ -8,3 +8,5 @@ urlextract
 emoji
 gensim
 tensorflow
+spacy
+Keras-Preprocessing
