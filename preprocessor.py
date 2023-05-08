@@ -74,31 +74,4 @@ def preprocess(data):
     # Remove entries having user as group_notification
     df = df[df['user'] != 'group_notification']
     df_original=df
-    # df=df[1:]
-
-    # df1=df
-    
-    # for sentence in df['user_message']:
-    # # split the sentence into username and message using ':'
-    #     split_sentence = sentence.split(':')
-    #     if len(split_sentence)==1:
-    #         r=df.index[df['user_message']==sentence].tolist()[0]
-    #         df=df.drop(index=r)
-    # usernames = []
-    # messages = []
-    # for sentence in df['user_message']:
-    #     split_sentence = sentence.split(':')
-    #     usernames.append(split_sentence[0])
-    #     if split_sentence[1]:
-    #         messages.append(split_sentence[1])
-    # df['username'] = usernames
-    # df['message'] = messages
-    # df=df.drop('user_message',axis=1)
-    # for sen in df['message']:
-    #     if sen==" <Media omitted>\n" or sen==" You deleted this message\n" or sen==" This message was deleted\n":
-    #         r=df.index[df['message']==sen].tolist()[0]
-    #         df=df.drop(index=r)
-    # df2=df['message']
-    
-    # Returning preprocessed data frame
     return df_original

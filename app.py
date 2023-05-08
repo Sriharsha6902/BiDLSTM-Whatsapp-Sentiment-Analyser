@@ -28,40 +28,6 @@ if uploaded_file is not None:
     # Perform preprocessing
     data = preprocessor.preprocess(d)
     data=senti.sentiment_analysis(data)
-    # Importing SentimentIntensityAnalyzer class from "nltk.sentiment.vader"
-    # from nltk.sentiment.vader import SentimentIntensityAnalyzer
-    
-    # # Object
-    # sentiments = SentimentIntensityAnalyzer()
-    
-    # # Creating different columns for (Positive/Negative/Neutral)
-    # data["po"] = [sentiments.polarity_scores(i)["pos"] for i in data["message"]] # Positive
-    # data["ne"] = [sentiments.polarity_scores(i)["neg"] for i in data["message"]] # Negative
-    # data["nu"] = [sentiments.polarity_scores(i)["neu"] for i in data["message"]] # Neutral
-    
-    # To indentify true sentiment per row in message column
-    # from keras.models import load_model
-    # best_model = load_model('best_model2.hdf5')
-    # sentiments=["neutral","negetive","positive"]
-    # tokenizer = Tokenizer(num_words=5000)
-    # exg=[]
-    # print("jnjn")
-    # for str in data["message"]:
-    #     sequence = tokenizer.texts_to_sequences([str])
-    #     test = pad_sequences(sequence, maxlen=200)
-    #     exg.append(sentiments[np.around(best_model.predict(test), decimals=0).argmax(axis=1)[0]])
-    # data['sentiment']=exg
-    # def sentiment(d):
-    #     if d["sentiment"] == "positive":
-    #         return 1
-    #     elif d["sentiment"] == "negetive":
-    #         return -1
-    #     else:
-    #         return 0
-
-    # # Creating new column & Applying function
-    # data['value'] = data.apply(lambda row: sentiment(row), axis=1)
-    
     # User names list
     user_list = data['user'].unique().tolist()
     
