@@ -6,3 +6,5 @@ collection
 wordcloud
 urlextract
 emoji
+gensim
+tensorflow
