@@ -16,3 +16,5 @@ The BiDLSTM-Whatsapp-Sentiment-Analyser includes the following features:<br/>
     3. Place your WhatsApp chat .txt file in the data directory
     4. Run the Streamlit app by running streamlit run app.py in the command line
     5. Upload your WhatsApp chat .txt file to the Streamlit app and wait for the analysis to be generated
+
+our website: https://chat-sentiment-analyser.streamlit.app/
