@@ -7,3 +7,4 @@ wordcloud
 urlextract
 emoji
 Keras-Preprocessing
+keras
