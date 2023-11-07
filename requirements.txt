@@ -8,3 +8,4 @@ urlextract
 emoji
 Keras-Preprocessing
 keras
+tensorflow
